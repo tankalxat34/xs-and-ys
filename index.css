@@ -4,6 +4,7 @@
     --color-nowinner: #805E00;
 
     --color-bg-main: #161616;
+    --color-bg2-main: #202020;
     --color-fg-main: #e4e4e4;
 }
 
@@ -84,6 +85,7 @@ button.prim {
 }
 
 button.prim:hover {
-    background-color: var(--color-fg-main);
-    color: var(--color-bg-main);
+    /* background-color: var(--color-fg-main); */
+    /* color: var(--color-bg-main); */
+    background-color: var(--color-bg2-main);
 }

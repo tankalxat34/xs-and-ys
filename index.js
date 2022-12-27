@@ -117,6 +117,9 @@ function clearField() {
 
     counterMoves = 0
     changeLabelNextSymbol()
+
+    document.getElementById("inf-text").innerHTML = new String()
+    document.getElementById("inf").classList = new String()
 }
 
 /* ********************** */
