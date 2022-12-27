@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #161616;
+    color: #e4e4e4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 5%;
+}
+
+table.table-game {
+    border: 2px solid white;
+    border-collapse: collapse;
+    
+    font-size: 30px;
+    font-family: monospace;
+
+    text-align: center;
+    margin: auto;
+}
+
+table.table-game tr {
+    border: 1px solid white; 
+}
+
+table.table-game td {
+    border: 1px solid white; 
+    padding: 30px;
+}
+
+.table-game-cell {
+    width: 40px;
+    height: 40px;
+    font-family: monospace;
+}
