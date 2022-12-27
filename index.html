@@ -4,6 +4,14 @@
     <meta charset="utf-8">
     <title>X's and Z's</title>
     <link rel="stylesheet" href="index.css">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"> -->
+    <meta name='viewport' content='width=device-width,initial-scale=1'/>
+    <meta content='true' name='HandheldFriendly'/>
+    <meta content='width' name='MobileOptimized'/>
+    <meta content='yes' name='apple-mobile-web-app-capable'/>
+
+
 
     <body>
         <h2>X's and Z's game</h2>
@@ -15,6 +23,7 @@
         </div>
 
         <div class="game">
+            <p>Next symbol is <b id="next-symbol" style="font-family: monospace; font-size: 20px;">X</b></p>
             <table class="table-game" id="gamefield">
                 <tbody>
                     <tr>
@@ -35,7 +44,9 @@
                 </tbody>
             </table>
 
-            <button id="btn-clear">Clear table</button>
+            <div>
+                <button id="btn-clear">Clear table</button>
+            </div>
         </div>
 
         <script src="./index.js"></script>

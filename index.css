@@ -1,6 +1,7 @@
 :root {
     --color-win: #008000;
     --color-lose: #800000;
+    --color-nowinner: #805E00;
 }
 
 
@@ -58,6 +59,10 @@ table.table-game td {
 
 #inf.lose {
     background-color: var(--color-lose);
+}
+
+#inf.nowinner {
+    background-color: var(--color-nowinner);
 }
 
 button {
