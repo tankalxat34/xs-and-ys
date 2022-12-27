@@ -10,8 +10,12 @@
         <p>This is a math model of popular game "Zeros and Crosses"</p>
         <p>By default your symbol is "X"</p>
 
+        <div id="inf">
+            <p id="inf-text"></p>
+        </div>
+
         <div class="game">
-            <table class="table-game">
+            <table class="table-game" id="gamefield">
                 <tbody>
                     <tr>
                         <td id="cell-1" class="table-game-cell"></td>
@@ -30,6 +34,8 @@
                     </tr>
                 </tbody>
             </table>
+
+            <button id="btn-clear">Clear table</button>
         </div>
 
         <script src="./index.js"></script>

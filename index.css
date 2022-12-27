@@ -1,3 +1,9 @@
+:root {
+    --color-win: #008000;
+    --color-lose: #800000;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -35,4 +41,26 @@ table.table-game td {
     width: 40px;
     height: 40px;
     font-family: monospace;
+}
+.table-game-cell:hover {
+    background-color: #202020;
+}
+
+#inf {
+    padding: 8px 12px;
+    font-family: monospace;
+    margin: 15px 20%;
+}
+
+#inf.win {
+    background-color: var(--color-win);
+}
+
+#inf.lose {
+    background-color: var(--color-lose);
+}
+
+button {
+    padding: 5px 10px;
+    margin: 5px;
 }
