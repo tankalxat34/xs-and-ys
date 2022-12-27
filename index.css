@@ -2,6 +2,9 @@
     --color-win: #008000;
     --color-lose: #800000;
     --color-nowinner: #805E00;
+
+    --color-bg-main: #161616;
+    --color-fg-main: #e4e4e4;
 }
 
 
@@ -11,8 +14,8 @@
 }
 
 html {
-    background-color: #161616;
-    color: #e4e4e4;
+    background-color: var(--color-bg-main);
+    color: var(--color-fg-main);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     margin: 5%;
@@ -66,6 +69,21 @@ table.table-game td {
 }
 
 button {
-    padding: 5px 10px;
+    padding: 7px 15px;
     margin: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    background-color: var(--color-bg-main);
+    color: var(--color-fg-main);
+}
+
+button.prim {
+    box-sizing: border-box;
+    border: 2px solid var(--color-fg-main);
+    transition: .3s;
+}
+
+button.prim:hover {
+    background-color: var(--color-fg-main);
+    color: var(--color-bg-main);
 }

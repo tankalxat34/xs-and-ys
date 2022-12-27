@@ -86,13 +86,44 @@ function checkToWin(value_in_table = USER_TABLE_VALUE) {
         showWinner(value_in_table)
     } else if ((new Set(TransMatrix(table)[2]).size === 1) && TransMatrix(table)[2][0] === value_in_table) {
         showWinner(value_in_table)
-    } 
+    }
+}
+
+function changeLabelNextSymbol() {
+    /*
+    Auto changing symbol on label "next symbol is"
+    */
+    if (counterMoves % 2 === 0) {
+        document.getElementById("next-symbol").innerText = USER_SYMBOL
+    } else {
+        document.getElementById("next-symbol").innerText = ENEMY_SYMBOL
+    }
+}
+
+function clearField() {
+    /*
+    Clear gamefield
+    */
+    table = [
+        [null, null, null],
+        [null, null, null],
+        [null, null, null]
+    ]
+    for (let row = 0; row < 3; row++) {
+        for (let column = 0; column < 3; column++) {
+            document.getElementById(`cell-${row}-${column}`).innerText = new String()
+        }
+    }
+
+    counterMoves = 0
+    changeLabelNextSymbol()
 }
 
 /* ********************** */
 
 document.oncontextmenu = () => {return false}
-document.getElementById("btn-clear").addEventListener("click", () => location.reload())
+// document.getElementById("btn-clear").addEventListener("click", () => location.reload())
+document.getElementById("btn-clear").addEventListener("click", clearField)
 
 for (let row = 0; row < 3; row++) {
     for (let column = 0; column < 3; column++) {
@@ -107,10 +138,6 @@ for (let row = 0; row < 3; row++) {
 document.getElementById("gamefield").addEventListener("click", () => {
     /* Analyze to make automaticly move on field */
 
-    // auto changing symbol ob label "next symbol is"
-    if (counterMoves % 2 === 0) {
-        document.getElementById("next-symbol").innerText = USER_SYMBOL
-    } else {
-        document.getElementById("next-symbol").innerText = ENEMY_SYMBOL
-    }
+    // auto changing symbol on label "next symbol is"
+    changeLabelNextSymbol()
 })

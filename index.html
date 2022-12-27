@@ -11,9 +11,13 @@
     <meta content='width' name='MobileOptimized'/>
     <meta content='yes' name='apple-mobile-web-app-capable'/>
 
-
+    <script src="https://unpkg.com/@vkontakte/vk-bridge@2.7.0/dist/browser.min.js"></script>
 
     <body>
+        <script>
+            vkBridge.send("VKWebAppInit")
+        </script>
+
         <h2>X's and Z's game</h2>
         <p>This is a math model of popular game "Zeros and Crosses"</p>
         <p>By default your symbol is "X"</p>
@@ -45,7 +49,7 @@
             </table>
 
             <div>
-                <button id="btn-clear">Clear table</button>
+                <button class="prim" id="btn-clear">Clear table</button>
             </div>
         </div>
 
@@ -53,7 +57,6 @@
     </body>
 
     <footer>
-        <small>© tankalxat34</small><br>
-        <small><a href="https://github.com/tankalxat34/xs-and-ys" target="_blank">GitHub</a></small>
+        <small>© tankalxat34</small>
     </footer>
 </html>
