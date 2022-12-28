@@ -6,28 +6,27 @@
     <link rel="stylesheet" href="index.css">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
     <meta name="apple-mobile-web-app-capable" content="yes"> -->
-    <meta name='viewport' content='width=device-width,initial-scale=1'/>
+    <meta name='viewport' content='width=device-width,initial-scale=1.0,user-scalable=0'/>
     <meta content='true' name='HandheldFriendly'/>
     <meta content='width' name='MobileOptimized'/>
     <meta content='yes' name='apple-mobile-web-app-capable'/>
 
     <script src="https://unpkg.com/@vkontakte/vk-bridge@2.7.0/dist/browser.min.js"></script>
+    <script>
+        vkBridge.send("VKWebAppInit")
+    </script>
 
     <body>
-        <script>
-            vkBridge.send("VKWebAppInit")
-        </script>
 
-        <h2>X's and Z's game</h2>
-        <p>This is a math model of popular game "Zeros and Crosses"</p>
-        <p>By default your symbol is "X"</p>
+        <h2 id="lang-title"></h2>
+        <p id="lang-description"></p>
 
         <div id="inf">
             <p id="inf-text"></p>
         </div>
 
         <div class="game">
-            <p>Next symbol is <b id="next-symbol" style="font-family: monospace; font-size: 20px;">X</b></p>
+            <p id="lang-nextSymbol"><summary id="next-symbol" style="font-family: monospace; font-size: 20px;"></summary></p>
             <table class="table-game" id="gamefield">
                 <tbody>
                     <tr>
@@ -49,7 +48,7 @@
             </table>
 
             <div>
-                <button class="prim" id="btn-clear">Clear table</button>
+                <button class="prim" id="lang-clearTable"></button>
             </div>
         </div>
 

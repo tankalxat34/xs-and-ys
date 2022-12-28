@@ -23,7 +23,7 @@ html {
 }
 
 table.table-game {
-    border: 2px solid white;
+    border: 2px solid var(--color-fg-main);
     border-collapse: collapse;
     
     font-size: 30px;
@@ -34,11 +34,11 @@ table.table-game {
 }
 
 table.table-game tr {
-    border: 1px solid white; 
+    border: 1px solid var(--color-fg-main); 
 }
 
 table.table-game td {
-    border: 1px solid white; 
+    border: 1px solid var(--color-fg-main); 
     padding: 30px;
 }
 
