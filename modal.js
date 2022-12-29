@@ -6,6 +6,8 @@ function modalClose(event = null) {
     modal.style.display = "none";
     document.getElementById("modal-title").innerText = new String()
     document.getElementById("modal-text").innerText = new String()
+
+    window.onclick = () => {return false}
     
     try {
         document.getElementById("btn-modal-callback").remove()
