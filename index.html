@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <title>X's and Z's</title>
     <link rel="stylesheet" href="index.css">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"> -->
     <meta name='viewport' content='width=device-width,initial-scale=1.0,user-scalable=0'/>
     <meta content='true' name='HandheldFriendly'/>
     <meta content='width' name='MobileOptimized'/>
@@ -18,22 +16,25 @@
 
     <body>
 
-        <h2 id="lang-title"></h2>
-        <p id="lang-description"></p>
+        <h1 id="lang-title" style="margin-top: 10%; margin-bottom: 3%; text-align: center;">Крестики нолики <a href="#" id="a-how-to-play">?</a></h1>
+        <p id="lang-description" style="text-align: center;"></p>
 
-        <div id="inf">
-            <p id="inf-text"></p>
+        <div id="myModal" class="modal">
+            <!-- Модальное окно -->
+            <div class="modal-content glass">
+                <div class="modal-header">
+                    <h3 id="modal-title"></h3>
+                </div>
+                <div class="modal-text">
+                    <p id="modal-text"></p>
+                </div>
+                <div id="modal-keyboard" class="modal-keyboard" style="justify-content: right; text-align: right;">
+                    <button id="btn-modal-close" class="prim radius-round">Закрыть</button>
+                </div>
+            </div>
         </div>
 
-        <!-- <div id="div-menu">
-            <ul>
-                <li style="list-style-type: none;"><button class="prim">Новая игра</button></li>
-                <li style="list-style-type: none;"><button class="prim">Настройки</button></li>
-            </ul>
-        </div> -->
-
         <div id="div-gamefield" class="game" style="display: 1;">
-            <p id="lang-nextSymbol"><summary id="next-symbol" style="font-family: monospace; font-size: 20px;"></summary></p>
             <table class="table-game" id="gamefield">
                 <tbody>
                     <tr>
@@ -53,16 +54,13 @@
                     </tr>
                 </tbody>
             </table>
-
-            <div>
-                <button class="prim" id="lang-clearTable"></button>
-            </div>
         </div>
 
         <script src="./index.js"></script>
+        <script src="./modal.js"></script>
     </body>
 
-    <footer>
+    <footer style="text-align: center;">
         <small>© tankalxat34</small>
     </footer>
 </html>
