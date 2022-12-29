@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="ru">
+<html lang="ru" onselectstart="return false">
     <meta charset="utf-8">
     <title>X's and Z's</title>
     <link rel="stylesheet" href="index.css">
@@ -25,7 +25,14 @@
             <p id="inf-text"></p>
         </div>
 
-        <div class="game">
+        <!-- <div id="div-menu">
+            <ul>
+                <li style="list-style-type: none;"><button class="prim">Новая игра</button></li>
+                <li style="list-style-type: none;"><button class="prim">Настройки</button></li>
+            </ul>
+        </div> -->
+
+        <div id="div-gamefield" class="game" style="display: 1;">
             <p id="lang-nextSymbol"><summary id="next-symbol" style="font-family: monospace; font-size: 20px;"></summary></p>
             <table class="table-game" id="gamefield">
                 <tbody>
