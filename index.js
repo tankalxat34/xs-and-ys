@@ -143,7 +143,7 @@ document.getElementById("a-how-to-play").addEventListener("click", () => {
 <br><br>
 Побеждает тот игрок, кому раньше удалось получить линию из своих символов.
 <br><br>
-Автор игры: <a href="https://vk.com/tankalxat34" target="_blank">tankalxat34</a>`)
+Автор игры: <a href="https://vk.com/tankalxat34" target="_blank">tankalxat34</a>`, null, null, null, true)
 })
 
 for (let row = 0; row < 3; row++) {

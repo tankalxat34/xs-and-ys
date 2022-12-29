@@ -16,7 +16,7 @@ function modalClose(event = null) {
     }
 }
 
-function modalShow(title = "title text", text = "modal text", callback = null, callback_text = "OK", close_after_callback = true, closeable_on_window = true) {
+function modalShow(title = "title text", text = "modal text", callback = null, callback_text = "OK", close_after_callback = true, closeable_on_window = false) {
     modal.style.display = "block";
 
     document.getElementById("modal-title").innerHTML = title
